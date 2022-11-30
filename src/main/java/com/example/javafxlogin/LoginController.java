@@ -1,11 +1,15 @@
 package com.example.javafxlogin;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import java.util.HashMap;
 
 public class LoginController {
+    public Label login;
+    public Button sign_in;
     @FXML
     private Label Text;
 
@@ -17,20 +21,18 @@ public class LoginController {
 
     @FXML
     protected void onSignInButtonClick() {
-        String name = username.getText();
-        String pass = password.getText();
 
-        Text.setText(name + "  " + pass);
+        String usernames = "user";
+        String passwords = "password";
 
-        String usernameMaster = "user";
-        String passwordMaster = "password";
-
-        if (usernameMaster.equals(name) && passwordMaster.equals(pass)) {
-            Text.setText("Login Successful");
+        if (usernames.equals(username.getText()) && passwords.equals(password.getText())) {
+            Text.setText("Login Successful.");
         }
-
-
-
-
+        else if (username.getText().isEmpty() || password.getText().isEmpty()){
+            Text.setText("At least one field is empty please try again.");
+        }
+        else {
+            Text.setText("Username or Password incorrect.");
+        }
     }
 }
