@@ -29,51 +29,39 @@ public class LoginController {
     @FXML
     protected void onSignInButtonClick() {
 
-//      Functionality for one username-input combo - NOT CASE SENSITIVE.
+    //Evaluates input fields for login. Username and Password checked, correct/incorrect login message displayed.
         String usernames = "user";
         String passwords = "password";
 
         if (usernames.equals(username.getText()) && passwords.equals(password.getText())) {
             Text.setText("Login Successful.");
-        } else if (username.getText().isEmpty() || password.getText().isEmpty()) {
-            Text.setText("At least one field is empty please try again.");
         } else {
             Text.setText("Username or Password incorrect.");
         }
-
-//        //Hashmap to store username-password combinations
-//        HashMap<String, String> loginPair = new HashMap<String, String>();
-//
-//        loginPair.put("user","password");
-//        loginPair.put("user1","password1");
-//        loginPair.put("user2","password2");
-//
-//        boolean check = false;
-//
-//        for (String i : loginPair.keySet()) {
-//            if (i.equals(username.getText()) && loginPair.get(i).equals(password.getText())){
-//                Text.setText("Login Successful.");
-//            }
-//            else {
-//                Text.setText("Login Unsuccessful.");
-//            }
-//        }
     }
 
-
+    //Functionality for close window button.
     @FXML
     public void onExitButtonClick() {
             Platform.exit();
     }
 
+    //Allows user to reset the text input fields for username and password.
     @FXML
     public void onResetButtonClick(){
         textEmpty();
     }
 
+    //Method to clear text input fields.
     public void textEmpty(){
         username.setText("");
         password.setText("");
+        sign_in.setDisable(false);
+    }
+
+    //Stops login button being used if text field is empty.
+    public void activateLoginButton(){
+        sign_in.setDisable((username.getText().isEmpty() || password.getText().isEmpty()));
     }
 
 }

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcb3293d-9e01-46de-9678-13e7e0def01d" name="Changes" comment="Added login functionality for one username-password combination.">
+    <list default="true" id="fcb3293d-9e01-46de-9678-13e7e0def01d" name="Changes" comment="Added appropriate comments.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/LoginApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/LoginApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/LoginController.java" afterDir="false" />
@@ -46,7 +46,7 @@
       <workItem from="1669803161823" duration="10349000" />
       <workItem from="1669855680639" duration="634000" />
       <workItem from="1669892565741" duration="2465000" />
-      <workItem from="1669895528414" duration="601000" />
+      <workItem from="1669895528414" duration="5057000" />
     </task>
     <task id="LOCAL-00001" summary="Created GUI for Login. Added Text Input, Password Input and Login Button.">
       <created>1669811174157</created>
@@ -69,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669828088701</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Reset, Exit Buttons.">
+      <created>1669896314195</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669896314195</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +96,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created GUI for Login. Added Text Input, Password Input and Login Button." />
     <MESSAGE value="Added login functionality for one username-password combination." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added login functionality for one username-password combination." />
+    <MESSAGE value="Added Reset, Exit Buttons." />
+    <MESSAGE value="Added appropriate comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added appropriate comments." />
   </component>
 </project>
