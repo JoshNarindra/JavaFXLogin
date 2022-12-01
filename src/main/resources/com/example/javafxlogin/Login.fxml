@@ -16,9 +16,9 @@
 
 
     <Label fx:id="login" text="Login" />
-   <TextField fx:id="username" promptText="Username" onKeyTyped="#activateLoginButton"/>
-   <PasswordField fx:id="password" promptText="Password" onKeyTyped="#activateLoginButton"/>
-   <Button fx:id="reset" onAction="#onResetButtonClick" mnemonicParsing="false" text="Reset" />
-    <Button fx:id="sign_in" onAction="#onSignInButtonClick" text="Sign in" />
+   <TextField fx:id="username" onKeyTyped="#activateLoginButton" promptText="Username" />
+   <PasswordField fx:id="password" onKeyTyped="#activateLoginButton" promptText="Password" />
+   <Button fx:id="reset" mnemonicParsing="false" onAction="#onResetButtonClick" text="Reset" />
+    <Button fx:id="sign_in" disable="true" onAction="#onSignInButtonClick" text="Sign in" />
     <Label fx:id="Text" />
 </VBox>
