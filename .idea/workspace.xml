@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcb3293d-9e01-46de-9678-13e7e0def01d" name="Changes" comment="Added appropriate comments. Updated." />
+    <list default="true" id="fcb3293d-9e01-46de-9678-13e7e0def01d" name="Changes" comment="Added appropriate comments. Updated.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +28,11 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -42,6 +48,9 @@
       <workItem from="1669855680639" duration="634000" />
       <workItem from="1669892565741" duration="2465000" />
       <workItem from="1669895528414" duration="5458000" />
+      <workItem from="1670941012310" duration="665000" />
+      <workItem from="1670947941640" duration="604000" />
+      <workItem from="1670963080523" duration="601000" />
     </task>
     <task id="LOCAL-00001" summary="Created GUI for Login. Added Text Input, Password Input and Login Button.">
       <created>1669811174157</created>
