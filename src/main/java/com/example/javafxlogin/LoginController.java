@@ -36,33 +36,9 @@ public class LoginController {
         textEmpty();
     }
 
-    //Method to clear text input fields.
-    public void textEmpty() {
-        username.setText("");
-        password.setText("");
-        sign_in.setDisable(false);
-    }
-
     @FXML
     protected void onSignInButtonClick() throws SQLException {
         //Evaluates input fields for login. Username and Password checked, correct/incorrect login message displayed.
-//        String usernames = "user";
-//        String passwords = "password";
-
-//        if (usernames.equals(username.getText()) && passwords.equals(password.getText())) {
-//            //Text.setText("Login Successful.");
-//            Alert b;
-//            b = new Alert(Alert.AlertType.INFORMATION, "Access Granted!", ButtonType.OK);
-//            b.showAndWait();
-//            textEmpty();
-//        } else {
-//            //Text.setText("Username or Password incorrect.");
-//            Alert a;
-//            a = new Alert(Alert.AlertType.ERROR, "Username or Password not recognised!", ButtonType.OK);
-//            a.showAndWait();
-//            textEmpty();
-//        }
-
         if (!username.getText().isBlank() && !password.getText().isBlank()) {
                 validateLogin();
         }
@@ -72,6 +48,13 @@ public class LoginController {
             b.showAndWait();
             textEmpty();
         }
+    }
+
+    //Method to clear text input fields.
+    public void textEmpty() {
+        username.setText("");
+        password.setText("");
+        sign_in.setDisable(false);
     }
 
     //Stops login button being used if text field is empty.
@@ -90,9 +73,9 @@ public class LoginController {
 
             while (rs.next()) {
                 if (rs.getInt(1) == 1) {
-                    Text.setText("Login Successful");
+                    System.out.println("Login Successful");
                 } else {
-                    Text.setText("Login Successful");
+                    System.out.println("Login Unsuccessful");
                 }
             }
         }

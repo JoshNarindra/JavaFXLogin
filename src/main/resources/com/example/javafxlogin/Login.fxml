@@ -20,6 +20,6 @@
    <PasswordField fx:id="password" onKeyTyped="#activateLoginButton" promptText="Password" />
    <Button fx:id="reset" mnemonicParsing="false" onAction="#onResetButtonClick" text="Reset" />
     <Button fx:id="sign_in" disable="true" onAction="#onSignInButtonClick" text="Sign in" />
-   <Hyperlink fx:id="register" text="Register for a new Account" onMouseClicked="#onRegisterButtonClick"/>
+   <Hyperlink fx:id="register" text="Register for a new Account"/>
     <Label fx:id="Text" />
 </VBox>
