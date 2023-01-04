@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcb3293d-9e01-46de-9678-13e7e0def01d" name="Changes" comment="Added appropriate comments. Updated." />
+    <list default="true" id="fcb3293d-9e01-46de-9678-13e7e0def01d" name="Changes" comment="Fixed basic login functionality.">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/LoginApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/LoginApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/javafxlogin/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/javafxlogin/Login.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -16,19 +33,42 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2IGLotfUwfvILGVzMdJPBVVVdCq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/joshu/IdeaProjects/Banking_Application",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,6 +82,15 @@
       <workItem from="1669855680639" duration="634000" />
       <workItem from="1669892565741" duration="2465000" />
       <workItem from="1669895528414" duration="5458000" />
+      <workItem from="1670885576550" duration="45000" />
+      <workItem from="1670885640250" duration="104000" />
+      <workItem from="1670885751604" duration="1051000" />
+      <workItem from="1671561000451" duration="10368000" />
+      <workItem from="1671711550899" duration="12603000" />
+      <workItem from="1672418410252" duration="739000" />
+      <workItem from="1672687047673" duration="56000" />
+      <workItem from="1672763287690" duration="4150000" />
+      <workItem from="1672787826491" duration="5262000" />
     </task>
     <task id="LOCAL-00001" summary="Created GUI for Login. Added Text Input, Password Input and Login Button.">
       <created>1669811174157</created>
@@ -108,6 +157,21 @@
     <MESSAGE value="Added Reset, Exit Buttons." />
     <MESSAGE value="Added appropriate comments." />
     <MESSAGE value="Added appropriate comments. Updated." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added appropriate comments. Updated." />
+    <MESSAGE value="Fixed basic login functionality." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed basic login functionality." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassNotFoundException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
