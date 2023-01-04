@@ -24,9 +24,28 @@ public class LoginController {
     @FXML
     private PasswordField password;
 
+    //Functionality for close window button.
     @FXML
-    protected void onSignInButtonClick() {
-    //Evaluates input fields for login. Username and Password checked, correct/incorrect login message displayed.
+    public void onExitButtonClick() {
+        Platform.exit();
+    }
+
+    //Allows user to reset the text input fields for username and password.
+    @FXML
+    public void onResetButtonClick() {
+        textEmpty();
+    }
+
+    //Method to clear text input fields.
+    public void textEmpty() {
+        username.setText("");
+        password.setText("");
+        sign_in.setDisable(false);
+    }
+
+    @FXML
+    protected void onSignInButtonClick() throws SQLException {
+        //Evaluates input fields for login. Username and Password checked, correct/incorrect login message displayed.
 //        String usernames = "user";
 //        String passwords = "password";
 
@@ -45,56 +64,40 @@ public class LoginController {
 //        }
 
         if (!username.getText().isBlank() && !password.getText().isBlank()) {
-            try {
-                DatabaseConnection x = new DatabaseConnection();
-
-                String query = "select * from UserDetails where username=" + "'" + username.getText() + "'";
-
-                var stmt = x.getConnection().prepareStatement(query);
-                var rs = stmt.executeQuery();
-
-                while (rs.next()) {
-                    if((rs.getString("userpassword")) == password.getText());
-                    System.out.println("Login Successful");
-                    }
-
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
+                validateLogin();
         }
         else {
             Alert b;
-            b = new Alert(Alert.AlertType.INFORMATION, "Empty Fields!", ButtonType.OK);
+            b = new Alert(Alert.AlertType.INFORMATION, "Empty Fields, Please enter username and password!", ButtonType.OK);
             b.showAndWait();
             textEmpty();
         }
-
-    }
-
-    //Functionality for close window button.
-    @FXML
-    public void onExitButtonClick() {
-            Platform.exit();
-    }
-
-    //Allows user to reset the text input fields for username and password.
-    @FXML
-    public void onResetButtonClick(){
-        textEmpty();
-    }
-
-    //Method to clear text input fields.
-    public void textEmpty(){
-        username.setText("");
-        password.setText("");
-        sign_in.setDisable(false);
     }
 
     //Stops login button being used if text field is empty.
-    public void activateLoginButton(){
+    public void activateLoginButton() {
         sign_in.setDisable((username.getText().isEmpty() || password.getText().isEmpty()));
     }
 
-    public void onRegisterButtonClick(MouseEvent mouseEvent) {
+    public void validateLogin() throws SQLException {
+        DatabaseConnection x = new DatabaseConnection();
+
+        String query = "select COUNT(1) from UserDetails where username=" + "'" + username.getText() + "'" + "and userpassword = '" + password.getText() + "'";
+
+        try {
+            var stmt = x.getConnection().prepareStatement(query);
+            var rs = stmt.executeQuery();
+
+            while (rs.next()) {
+                if (rs.getInt(1) == 1) {
+                    Text.setText("Login Successful");
+                } else {
+                    Text.setText("Login Successful");
+                }
+            }
+        }
+        catch (Exception e ){
+            e.printStackTrace();
+        }
     }
 }
