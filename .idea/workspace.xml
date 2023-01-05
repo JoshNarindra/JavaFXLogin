@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcb3293d-9e01-46de-9678-13e7e0def01d" name="Changes" comment="Added scene switching for register user scene." />
+    <list default="true" id="fcb3293d-9e01-46de-9678-13e7e0def01d" name="Changes" comment="Standardized class names.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/RegisterController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +52,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_directory_selection": "C:/Users/joshu/IdeaProjects/JavaFXLogin/src/main/resources/com/example/javafxlogin",
-    "last_opened_file_path": "C:/Users/joshu/IdeaProjects/Banking_Application",
+    "last_opened_file_path": "C:/Users/joshu/IdeaProjects/JavaFXLogin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -89,6 +92,7 @@
       <workItem from="1672687047673" duration="56000" />
       <workItem from="1672763287690" duration="4150000" />
       <workItem from="1672787826491" duration="19463000" />
+      <workItem from="1672914979428" duration="3282000" />
     </task>
     <task id="LOCAL-00001" summary="Created GUI for Login. Added Text Input, Password Input and Login Button.">
       <created>1669811174157</created>
@@ -167,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672883010872</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Standardized class names.">
+      <created>1672915246714</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1672915246714</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +204,8 @@
     <MESSAGE value="Fixed basic login functionality." />
     <MESSAGE value="Fixed login functionality with SQL database." />
     <MESSAGE value="Added scene switching for register user scene." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added scene switching for register user scene." />
+    <MESSAGE value="Standardized class names." />
+    <option name="LAST_COMMIT_MESSAGE" value="Standardized class names." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
