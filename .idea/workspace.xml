@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcb3293d-9e01-46de-9678-13e7e0def01d" name="Changes" comment="Standardized class names.">
+    <list default="true" id="fcb3293d-9e01-46de-9678-13e7e0def01d" name="Changes" comment="Fixed functionality of both controllers + bugs">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/LoggedInController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/javafxlogin/LoggedIn.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/javafxlogin/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/javafxlogin/Register.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +55,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_directory_selection": "C:/Users/joshu/IdeaProjects/JavaFXLogin/src/main/resources/com/example/javafxlogin",
+    "last_directory_selection": "C:/Users/joshu/IdeaProjects/JavaFXLogin/src/main/java/com/example/javafxlogin",
     "last_opened_file_path": "C:/Users/joshu/IdeaProjects/JavaFXLogin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -92,7 +96,7 @@
       <workItem from="1672687047673" duration="56000" />
       <workItem from="1672763287690" duration="4150000" />
       <workItem from="1672787826491" duration="19463000" />
-      <workItem from="1672914979428" duration="3282000" />
+      <workItem from="1672914979428" duration="6628000" />
     </task>
     <task id="LOCAL-00001" summary="Created GUI for Login. Added Text Input, Password Input and Login Button.">
       <created>1669811174157</created>
@@ -178,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672915246714</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fixed functionality of both controllers + bugs">
+      <created>1672927951617</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1672927951617</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +216,8 @@
     <MESSAGE value="Fixed login functionality with SQL database." />
     <MESSAGE value="Added scene switching for register user scene." />
     <MESSAGE value="Standardized class names." />
-    <option name="LAST_COMMIT_MESSAGE" value="Standardized class names." />
+    <MESSAGE value="Fixed functionality of both controllers + bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed functionality of both controllers + bugs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

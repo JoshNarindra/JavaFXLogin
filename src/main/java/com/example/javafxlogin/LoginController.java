@@ -85,8 +85,10 @@ public class LoginController {
             while (rs.next()) {
                 if (rs.getInt(1) == 1) {
                     System.out.println("Login Successful");
+                    switchToLoggedIn();
                 } else {
-                    System.out.println("Login Unsuccessful");
+                    System.out.println("Login Unsuccessful, Try Again");
+                    switchToLoggedIn();
                 }
             }
         }
@@ -103,5 +105,14 @@ public class LoginController {
         stage.show();
     }
 
+    //Switch to Logged In Scene.
+    @FXML
+    public void switchToLoggedIn() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("LoggedIn.fxml"));
+        stage = (Stage)sign_in.getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 
 }

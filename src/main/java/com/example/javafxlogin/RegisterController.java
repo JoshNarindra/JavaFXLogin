@@ -1,19 +1,27 @@
 package com.example.javafxlogin;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 
 import javafx.event.ActionEvent;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class RegisterController
 {
-    //@FXML
-    //public void initialize() {
-    //}
-
+    @FXML
+    private Stage stage;
+    @FXML
+    private Scene scene;
+    @FXML
+    private Parent root;
     @FXML
     public TextField usernametextfield;
-
     @FXML
     public TextField passwordtextfield;
 
@@ -42,11 +50,19 @@ public class RegisterController
             while (rs.next()) {
                 //if statement checks if username inputted already exists in database. If it does not it registers the user into the system.
                 if (rs.getInt(1) == 1) {
-                    System.out.println("Username Already Exists, Please Try Again");
+                    Alert b;
+                    b = new Alert(Alert.AlertType.INFORMATION, "Username Already Exists, Please Try Again", ButtonType.OK);
+                    b.showAndWait();
+
                     textEmpty();
                 } else {
-                    System.out.println("Username Does Not Exist, user added to database");
+                    Alert b;
+                    b = new Alert(Alert.AlertType.INFORMATION, "User Registered", ButtonType.OK);
+                    b.showAndWait();
+
+                    textEmpty();
                     addUserToDatabase();
+                    returnToLogin();
                 }
             }
 
@@ -75,5 +91,14 @@ public class RegisterController
     public void textEmpty() {
         usernametextfield.setText("");
         passwordtextfield.setText("");
+    }
+
+    @FXML
+    public void returnToLogin() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        stage = (Stage)(usernametextfield.getScene().getWindow());
+        scene = new Scene(root, 450, 400);
+        stage.setScene(scene);
+        stage.show();
     }
 }
