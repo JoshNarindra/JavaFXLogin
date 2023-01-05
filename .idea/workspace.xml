@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcb3293d-9e01-46de-9678-13e7e0def01d" name="Changes" comment="Fixed login functionality with SQL database.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/Register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/javafxlogin/Register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxlogin/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/javafxlogin/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/javafxlogin/Login.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="fcb3293d-9e01-46de-9678-13e7e0def01d" name="Changes" comment="Added scene switching for register user scene." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +88,7 @@
       <workItem from="1672418410252" duration="739000" />
       <workItem from="1672687047673" duration="56000" />
       <workItem from="1672763287690" duration="4150000" />
-      <workItem from="1672787826491" duration="19342000" />
+      <workItem from="1672787826491" duration="19463000" />
     </task>
     <task id="LOCAL-00001" summary="Created GUI for Login. Added Text Input, Password Input and Login Button.">
       <created>1669811174157</created>
@@ -166,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672848239751</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added scene switching for register user scene.">
+      <created>1672883010871</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672883010872</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,7 +192,8 @@
     <MESSAGE value="Added appropriate comments. Updated." />
     <MESSAGE value="Fixed basic login functionality." />
     <MESSAGE value="Fixed login functionality with SQL database." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed login functionality with SQL database." />
+    <MESSAGE value="Added scene switching for register user scene." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added scene switching for register user scene." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

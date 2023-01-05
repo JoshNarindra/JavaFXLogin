@@ -1,25 +1,11 @@
 package com.example.javafxlogin;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.control.*;
-import javafx.application.Platform;
 
-import java.io.IOException;
-import java.util.HashMap;
 import javafx.event.ActionEvent;
-import javafx.scene.input.MouseEvent;
 
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-
-import java.sql.*;
-import java.sql.Connection;
-import java.sql.DriverManager;
-
-public class Register
+public class RegisterController
 {
     @FXML
     public void initialize() {
