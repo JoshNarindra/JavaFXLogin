@@ -1,11 +1,19 @@
 package com.example.javafxlogin;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.application.Platform;
+
+import java.io.IOException;
 import java.util.HashMap;
 import javafx.event.ActionEvent;
 import javafx.scene.input.MouseEvent;
+
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 import java.sql.*;
 import java.sql.Connection;
@@ -16,6 +24,9 @@ public class LoginController {
     public Button sign_in;
     public Button exit;
     public Button reset;
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
 
     @FXML
     public static Label Text; //change back to private no static - only for testing sql connection
@@ -83,4 +94,14 @@ public class LoginController {
             e.printStackTrace();
         }
     }
+
+    public void switchToRegister(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("Register.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+
 }
