@@ -56,12 +56,13 @@ public class RegisterController
 
                     textEmpty();
                 } else {
+                    addUserToDatabase();
+
                     Alert b;
                     b = new Alert(Alert.AlertType.INFORMATION, "User Registered", ButtonType.OK);
                     b.showAndWait();
 
                     textEmpty();
-                    addUserToDatabase();
                     returnToLogin();
                 }
             }
@@ -95,6 +96,15 @@ public class RegisterController
 
     @FXML
     public void returnToLogin() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        stage = (Stage)(usernametextfield.getScene().getWindow());
+        scene = new Scene(root, 450, 400);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    public void returnToLoginEvent() throws IOException {
         root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         stage = (Stage)(usernametextfield.getScene().getWindow());
         scene = new Scene(root, 450, 400);

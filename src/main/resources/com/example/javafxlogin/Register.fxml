@@ -18,5 +18,5 @@
          </font>
       </Label>
       <Button fx:id="registerbutton" layoutX="155.0" layoutY="261.0" mnemonicParsing="false" onAction="#registerButtonClick" text="Register" />
-   <Hyperlink fx:id="ReturnToLogin" layoutX="125.0" layoutY="337.0" text="Return to Login Page" />
+   <Hyperlink fx:id="ReturnToLogin" layoutX="125.0" layoutY="337.0" text="Return to Login Page" onAction="#returnToLoginEvent" />
 </AnchorPane>
