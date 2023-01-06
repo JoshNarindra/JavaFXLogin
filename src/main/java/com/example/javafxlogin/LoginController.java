@@ -1,35 +1,38 @@
+/*
+Class functions as controller for login scene.
+ */
+
 package com.example.javafxlogin;
 
+//Imports
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.application.Platform;
-
 import java.io.IOException;
-import java.util.HashMap;
 import javafx.event.ActionEvent;
-import javafx.scene.input.MouseEvent;
-
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
 import java.sql.*;
-import java.sql.Connection;
-import java.sql.DriverManager;
 
 public class LoginController {
-    public Label login;
-    public Button sign_in;
-    public Button exit;
-    public Button reset;
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
-
+    //Declare FXML variables.
     @FXML
-    public static Label Text; //change back to private no static - only for testing sql connection
+    public Label login;
+    @FXML
+    public Button sign_in;
+    @FXML
+    public Button exit;
+    @FXML
+    public Button reset;
+    @FXML
+    private Stage stage;
+    @FXML
+    private Scene scene;
+    @FXML
+    private Parent root;
     @FXML
     private TextField username;
     @FXML
@@ -47,9 +50,9 @@ public class LoginController {
         textEmpty();
     }
 
+    //Evaluates whether input fields are empty when login is pressed. Alerts user if they are empty - calls validate user method if not.
     @FXML
     protected void onSignInButtonClick() throws SQLException {
-        //Evaluates input fields for login. Username and Password checked, correct/incorrect login message displayed.
         if (!username.getText().isBlank() && !password.getText().isBlank()) {
                 validateLogin();
         }
@@ -73,9 +76,10 @@ public class LoginController {
         sign_in.setDisable((username.getText().isEmpty() || password.getText().isEmpty()));
     }
 
+    //Runs SQL query to validate username/password exist in UserDetails database.
+    //If found calls a method to switch scene to logged in screen. If not notifies user.
     public void validateLogin() throws SQLException {
         DatabaseConnection x = new DatabaseConnection();
-
         String query = "select COUNT(1) from UserDetails where username=" + "'" + username.getText() + "'" + "and userpassword = '" + password.getText() + "'";
 
         try {
@@ -87,8 +91,10 @@ public class LoginController {
                     System.out.println("Login Successful");
                     switchToLoggedIn();
                 } else {
-                    System.out.println("Login Unsuccessful, Try Again");
-                    switchToLoggedIn();
+                    Alert b;
+                    b = new Alert(Alert.AlertType.INFORMATION, "User does not exist!", ButtonType.OK);
+                    b.showAndWait();
+                    textEmpty();
                 }
             }
         }
@@ -97,6 +103,7 @@ public class LoginController {
         }
     }
 
+    //Method switches scene to Register User scene, upon clicking hyperlink.
     public void switchToRegister(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("Register.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();

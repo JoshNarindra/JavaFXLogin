@@ -3,11 +3,13 @@ Class to create instance of DatabaseConnection object.
  */
 package com.example.javafxlogin;
 
+//Imports
 import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class DatabaseConnection {
 
+    //Initialise variables for Database connection.
     static String website = "jdbc:sqlserver://SQL8002.site4now.net;database=db_a8cc79_Josall";
     static String username = "db_a8cc79_Josall_admin";
     static String password = "Mi92uN44oC47";
